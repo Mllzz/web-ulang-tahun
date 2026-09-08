@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Happy Birthday My Love 💙</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- BACKGROUND -->
+
+    <div class="stars"></div>
+
+    <div class="glow glow-one"></div>
+
+    <div class="glow glow-two"></div>
+
+
+    <!-- MUSIK -->
+
+    <audio
+        id="music"
+        loop
+        preload="auto"
+    >
+
+        <source
+            src="{{ url_for('static', filename='music.mp3') }}"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- ===================== -->
+    <!-- HALAMAN 1 -->
+    <!-- ===================== -->
+
+    <section
+        class="page active"
+        id="page1"
+    >
+
+        <div class="card">
+
+            <div class="label">
+                ✦ KEJUTAN KECIL ✦
+            </div>
+
+
+            <div class="icon">
+                💙
+            </div>
+
+
+            <h1>
+                Hello,
+                <span>My Love</span>
+            </h1>
+
+
+            <p>
+                Ada sesuatu yang sudah
+                aku siapkan khusus untukmu.
+            </p>
+
+
+            <p class="small">
+                Kamu siap?
+            </p>
+
+
+            <button onclick="nextPage(2)">
+                Buka Hadiah
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===================== -->
+    <!-- HALAMAN 2 -->
+    <!-- ===================== -->
+
+    <section
+    class="page"
+    id="page2"
+>
+
+    <div class="card message-card">
+
+        <div class="label">
+            ✦ UNTUK HARI SPESIALMU ✦
+        </div>
+
+
+        <div class="icon">
+            🎂
+        </div>
+
+
+        <p class="message-date">
+            Hari ini, tanggal 9 September 2026, adalah hari yang sangat spesial. 💙
+        </p>
+
+
+        <h1>
+            Happy
+            <span>Birthday</span>
+        </h1>
+
+
+        <h2>
+            [RIEL SAYANGKU] 💙
+        </h2>
+
+
+        <div class="message-divider"></div>
+
+
+        <div class="message-content">
+
+            <p>
+                Hari ini bukan hanya tentang
+                bertambahnya satu angka dalam usiamu.
+            </p>
+
+            <p>
+                Hari ini adalah tentang seseorang
+                yang begitu berarti dalam hidupku —
+                <strong>kamu.</strong>❤️
+                xixixi
+            </p>
+
+
+            <p>
+                Aku berharap di usia yang baru ini,
+                langkahmu selalu dimudahkan,
+                hatimu selalu dipenuhi kebahagiaan,
+                dan setiap impian yang kamu semogakan
+                perlahan menemukan jalannya.
+            </p>
+
+
+            <div class="highlight-message">
+
+                ✨
+                <br>
+
+                <span>
+                    Semoga kamu selalu punya alasan
+                    untuk tersenyum,
+                    bahkan pada hari-hari yang tidak mudah.
+                </span>
+
+            </div>
+
+
+            <p>
+                Jangan pernah berhenti menjadi
+                dirimu sendiri.
+                Karena menurutku,
+                kamu sudah lebih dari cukup
+                dengan menjadi kamu.
+            </p>
+
+        </div>
+
+
+        <div class="message-signature">
+            Love you, selalu. 💙
+        </div>
+
+
+        <button onclick="nextPage(3)">
+            Ada Sesuatu Untukmu 💌
+            <span>→</span>
+        </button>
+
+    </div>
+
+</section>
+
+
+
+    <!-- ===================== -->
+    <!-- HALAMAN 3 -->
+    <!-- ===================== -->
+
+    <section
+    class="page"
+    id="page3"
+>
+
+    <div class="card letter">
+
+        <div class="label">
+            ✦ SURAT DARI HATIKU ✦
+        </div>
+
+
+        <div class="icon">
+            💌
+        </div>
+
+
+        <h1>
+            Untukmu,
+            <span>My Love</span>
+        </h1>
+
+
+        <div class="letter-paper">
+
+
+            <p class="opening">
+                Untuk kamu, yang tanpa sadar
+                telah menjadi bagian penting
+                dari hidupku...
+            </p>
+
+
+            <p>
+                Aku tidak tahu sejak kapan,
+                tetapi kehadiranmu perlahan
+                menjadi sesuatu yang selalu
+                aku tunggu setiap harinya.
+            </p>
+
+
+            <p>
+                Ada banyak hal sederhana tentangmu
+                yang mungkin tidak kamu sadari,
+                tetapi justru hal-hal kecil itulah
+                yang membuatmu begitu berarti bagiku.
+            </p>
+
+
+            <p>
+                Terima kasih sudah hadir.
+                Terima kasih untuk setiap tawa,
+                setiap cerita,
+                setiap perhatian,
+                dan setiap waktu yang telah
+                kita habiskan bersama.
+            </p>
+
+
+            <p>
+                Aku mungkin tidak bisa menjanjikan
+                bahwa semuanya akan selalu sempurna.
+                Akan ada hari yang mudah,
+                dan mungkin ada juga hari
+                yang terasa berat.
+            </p>
+
+
+            <div class="quote-message">
+
+                <span>“</span>
+
+                Tapi selama kita masih mau
+                berjalan bersama,
+                aku ingin terus membuat
+                kenangan indah bersamamu.
+
+                <span>”</span>
+
+            </div>
+
+
+            <p>
+                Di hari ulang tahunmu ini,
+                aku hanya ingin kamu tahu
+                satu hal sederhana:
+            </p>
+
+
+            <div class="main-wish">
+
+                💙
+
+                <br>
+
+                <strong>
+                    Aku ingin melihatmu bahagia.
+                </strong>
+
+                <br>
+
+                Hari ini,
+                besok,
+                dan di hari-hari yang akan datang.
+
+            </div>
+
+
+            <p>
+                Semoga kamu selalu sehat.
+                Semoga semua langkahmu dipenuhi
+                keberanian.
+                Semoga setiap mimpimu
+                menemukan jalannya.
+            </p>
+
+
+            <p>
+                Dan semoga,
+                di antara begitu banyak hal
+                yang terjadi dalam hidup kita,
+                kita masih memiliki kesempatan
+                untuk menciptakan lebih banyak
+                cerita bersama.
+            </p>
+
+
+            <p class="last-message">
+                Selamat ulang tahun, sayang.
+                <br>
+                Terima kasih sudah menjadi
+                bagian dari hidupku. ❤️
+            </p>
+
+
+        </div>
+
+
+        <div class="signature">
+
+            — Dari hatiku —
+            <br>
+            ❤️
+
+        </div>
+
+
+        <button onclick="nextPage(4)">
+            Mau liat cowokku? 📸
+            <span>→</span>
+        </button>
+
+    </div>
+
+</section>
+
+
+
+    <!-- ===================== -->
+    <!-- HALAMAN 4 -->
+    <!-- ===================== -->
+
+    <section
+        class="page"
+        id="page4"
+    >
+
+        <div class="card">
+
+            <div class="label">
+                ✦ OUR LITTLE MEMORY ✦
+            </div>
+
+
+            <div class="icon">
+                📸
+            </div>
+
+
+            <h1>
+                Our
+                <span>Memory</span>
+            </h1>
+
+
+            <div class="photo-frame">
+
+                <img
+                    src="{{ url_for('static', filename='foto-pacar.jpeg') }}"
+                    alt="Foto Pacar"
+                >
+
+            </div>
+
+
+            <p class="caption">
+                Ini dia, ganteng banget kan xixixi 💙
+            </p>
+
+
+            <button onclick="nextPage(5)">
+                Lihat videonya juga dong🎬
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- HALAMAN 5 - VIDEO -->
+    <!-- ===================== -->
+
+    <section
+        class="page"
+        id="page5"
+    >
+
+        <div class="card">
+
+            <div class="label">
+                ✦ OUR STORY IN MOTION ✦
+            </div>
+
+            <div class="icon">
+                🎬
+            </div>
+
+            <h1>
+                Our
+                <span>Story</span>
+            </h1>
+
+            <p>
+                Kalau foto menyimpan satu momen,
+                video menyimpan seluruh cerita. 💙
+            </p>
+
+            <div class="video-frame">
+
+                <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                >
+
+                    <source
+                        src="{{ url_for('static', filename='kenangann.mp4') }}"
+                        type="video/mp4"
+                    >
+
+                    Browser kamu tidak mendukung video.
+
+                </video>
+
+            </div>
+
+            <p class="caption">
+                Putar videonya dan lihat kembali
+                cerita kecil yang pernah kita lalui bersama. ❤️
+            </p>
+
+            <button onclick="nextPage(6)">
+                Kejutan Terakhir
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- HALAMAN 6 -->
+    <!-- ===================== -->
+
+    <section
+        class="page"
+        id="page6"
+    >
+
+        <div class="card">
+
+            <div class="label">
+                ✦ THE LAST SURPRISE ✦
+            </div>
+
+
+            <div class="icon">
+                🎁
+            </div>
+
+
+            <h1>
+                One Last
+                <span>Surprise</span>
+            </h1>
+
+
+            <p>
+                Ada satu hal lagi yang
+                ingin ku sampaikan
+                ke kamu.
+            </p>
+
+
+            <div class="quote">
+
+                "Semoga perjalanan kita
+                masih panjang dan kita
+                bisa membuat lebih banyak
+                cerita bersama nah sayangku." 💙
+
+            </div>
+
+
+            <button onclick="showSurprise()">
+                Buka Kejutan ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===================== -->
+    <!-- POPUP -->
+    <!-- ===================== -->
+
+    <div
+        class="popup"
+        id="popup"
+    >
+
+        <div class="popup-box">
+
+            <div class="icon big">
+                🎉
+            </div>
+
+
+            <h1>
+                Happy Birthday!
+            </h1>
+
+
+            <h2>
+                My Favorite Person 💙
+            </h2>
+
+
+            <p>
+                Semoga tahun ini menjadi
+                salah satu tahun terbaik
+                dalam hidupmu.
+            </p>
+
+
+            <p>
+                Terima kasih karena sudah
+                hadir dalam hidupku
+                sehat selalu yah gantengku. ❤️
+            </p>
+
+
+            <div class="love-text">
+                I LOVE YOU SO MUCH GANTENGKU UMMACH❤️
+            </div>
+
+
+            <button onclick="closeSurprise()">
+                Tutup 💙
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TOMBOL MUSIK -->
+
+    <button
+        id="musicButton"
+        onclick="toggleMusic()"
+    >
+        🎵
+    </button>
+
+
+    <div id="confetti-container"></div>
+
+
+    <script
+        src="{{ url_for('static', filename='script.js') }}"
+    ></script>
+
+
+</body>
+
+</html>

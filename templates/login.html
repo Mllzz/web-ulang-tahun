@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Special For You 💙</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 20px;
+
+            font-family:
+                Arial,
+                sans-serif;
+
+            color: white;
+
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    #5ebdf5,
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #020b1c,
+                    #07345d,
+                    #147fc1
+                );
+        }
+
+
+        /* BINTANG */
+
+        .stars {
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            opacity: 0.35;
+
+            background-image:
+                radial-gradient(
+                    white 1px,
+                    transparent 1px
+                );
+
+            background-size: 45px 45px;
+
+        }
+
+
+        /* HATI */
+
+        .heart {
+
+            position: fixed;
+
+            top: -50px;
+
+            font-size: 25px;
+
+            animation:
+                falling
+                linear
+                infinite;
+
+            opacity: 0.7;
+
+        }
+
+
+        .heart:nth-child(2) {
+            left: 10%;
+            animation-duration: 7s;
+        }
+
+        .heart:nth-child(3) {
+            left: 30%;
+            animation-duration: 10s;
+        }
+
+        .heart:nth-child(4) {
+            left: 50%;
+            animation-duration: 8s;
+        }
+
+        .heart:nth-child(5) {
+            left: 70%;
+            animation-duration: 11s;
+        }
+
+        .heart:nth-child(6) {
+            left: 90%;
+            animation-duration: 9s;
+        }
+
+
+        @keyframes falling {
+
+            from {
+                transform:
+                    translateY(-50px)
+                    rotate(0deg);
+            }
+
+            to {
+                transform:
+                    translateY(110vh)
+                    rotate(360deg);
+            }
+
+        }
+
+
+        /* LOGIN BOX */
+
+        .login-box {
+
+            position: relative;
+
+            width: 100%;
+
+            max-width: 430px;
+
+            padding: 40px 30px;
+
+            text-align: center;
+
+            border-radius: 30px;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.12
+                );
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.25
+                );
+
+            backdrop-filter:
+                blur(20px);
+
+            box-shadow:
+                0 20px 60px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.35
+                );
+
+            z-index: 2;
+
+            animation:
+                appear
+                1s
+                ease;
+
+        }
+
+
+        @keyframes appear {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(30px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+
+            }
+
+        }
+
+
+        .icon {
+
+            font-size: 70px;
+
+            margin-bottom: 15px;
+
+            animation:
+                heartbeat
+                1.4s
+                infinite;
+
+        }
+
+
+        @keyframes heartbeat {
+
+            0%,
+            100% {
+                transform:
+                    scale(1);
+            }
+
+            50% {
+                transform:
+                    scale(1.15);
+            }
+
+        }
+
+
+        .label {
+
+            font-size: 11px;
+
+            letter-spacing: 3px;
+
+            color: #a9e3ff;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        h1 {
+
+            font-size: 34px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        p {
+
+            line-height: 1.7;
+
+            margin-bottom: 25px;
+
+            opacity: 0.9;
+
+        }
+
+
+        /* ERROR */
+
+        .error {
+
+            padding: 12px;
+
+            border-radius: 15px;
+
+            background:
+                rgba(
+                    255,
+                    70,
+                    100,
+                    0.25
+                );
+
+            margin-bottom: 15px;
+
+            font-size: 14px;
+
+        }
+
+
+        /* INPUT */
+
+        .input-group {
+
+            text-align: left;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        label {
+
+            display: block;
+
+            margin-bottom: 7px;
+
+            font-size: 14px;
+
+        }
+
+
+        input {
+
+            width: 100%;
+
+            padding: 14px 15px;
+
+            border: none;
+
+            outline: none;
+
+            border-radius: 15px;
+
+            color: #123;
+
+            font-size: 15px;
+
+        }
+
+
+        input:focus {
+
+            box-shadow:
+                0 0 0 3px
+                rgba(
+                    108,
+                    202,
+                    255,
+                    0.4
+                );
+
+        }
+
+
+        /* BUTTON */
+
+        button {
+
+            width: 100%;
+
+            border: none;
+
+            padding: 14px;
+
+            border-radius: 30px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffffff,
+                    #d8f4ff
+                );
+
+            color: #075487;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+        }
+
+
+        button:hover {
+
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+                0 10px 30px
+                rgba(
+                    95,
+                    201,
+                    255,
+                    0.4
+                );
+
+        }
+
+
+        .hint {
+
+            font-size: 12px;
+
+            opacity: 0.6;
+
+            margin-top: 18px;
+
+        }
+
+
+        @media (max-width: 500px) {
+
+            .login-box {
+
+                padding:
+                    35px
+                    20px;
+
+            }
+
+
+            h1 {
+
+                font-size: 29px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="stars"></div>
+
+    <div class="heart">❤️</div>
+    <div class="heart">💙</div>
+    <div class="heart">💗</div>
+    <div class="heart">✨</div>
+    <div class="heart">💕</div>
+
+
+    <div class="login-box">
+
+        <div class="label">
+            ✦ PRIVATE SURPRISE ✦
+        </div>
+
+
+        <div class="icon">
+            💌
+        </div>
+
+
+        <h1>
+            Ada Sesuatu Untukmu
+        </h1>
+
+
+        <p>
+            Masukkan nama dan tanggal lahirmu
+            untuk membuka hadiah kecil ini. 💙
+        </p>
+
+
+        {% if error %}
+
+        <div class="error">
+            {{ error }}
+        </div>
+
+        {% endif %}
+
+
+        <form method="POST">
+
+
+            <div class="input-group">
+
+                <label>
+                    💙 Nama
+                </label>
+
+                <input
+                    type="text"
+                    name="nama"
+                    placeholder="Masukkan namamu"
+                    required
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>
+                    🎂 Tanggal Lahir
+                </label>
+
+                <input
+                    type="text"
+                    name="tanggal_lahir"
+                    placeholder="DD-MM-YYYY"
+                    required
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <button type="submit">
+
+                Buka Hadiah 💙
+
+            </button>
+
+
+        </form>
+
+
+        <div class="hint">
+
+            Hanya kamu yang tahu jawabannya ✨
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
